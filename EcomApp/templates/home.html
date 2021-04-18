@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% load static %}
+
+    {%block titlee%}
+    {{setting.title}}
+
+    {%endblock titlee %}
+
+
+    {% block description %}
+    {{setting.description}}
+
+    {% endblock description %}
+
+    {%block keyword%}
+
+    {%endblock keyword %}
+
+
+
+     <!-- Header Area End Here -->
+            {% block header %}
+                {%include "header.html"%}
+
+            {% endblock header%}
+            
+            {% block sidebar %}
+
+            {% endblock sidebar %}
+
+            {% block slider %}
+                {%include "slider.html"%}
+
+            {% endblock slider%}
+
+            {% block mainbody %} 
+                {%include "content.html"%}
+
+            {% endblock mainbody %}
+            <!-- Li's Trendding Products Area End Here -->
+            <!-- Begin Footer Area -->
+            {% block footer %}
+                {%include "footer.html"%}
+
+            {% endblock footer %}
+
+            
+            
